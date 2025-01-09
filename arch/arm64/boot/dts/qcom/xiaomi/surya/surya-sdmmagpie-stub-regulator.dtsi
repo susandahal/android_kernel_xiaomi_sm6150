@@ -1,0 +1,7 @@
+#include <dt-bindings/regulator/qcom,rpmh-regulator.h>
+
+
+&pm6150_l18 {
+	regulator-min-microvolt = <1696000>;
+	regulator-max-microvolt = <1904000>;
+};
