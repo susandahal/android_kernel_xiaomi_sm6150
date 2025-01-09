@@ -1,0 +1,62 @@
+/ {
+	aliases {
+		spi0 = &qupv3_se11_spi;
+	};
+};
+
+&firmware {
+	android {
+		vbmeta {
+			parts = "vbmeta,boot,recovery,system,vendor,dtbo";
+		};
+		fstab {
+			vendor {
+				fsmgr_flags = "wait,avb";
+			};
+		};
+    };
+};
+
+&soc {
+	sn_fuse: snfuse@0x00786134 {
+		compatible = "qcom,sn-fuse";
+		reg = <0x00786134 0x4>,
+			<0x0078607c 0x4>;
+		reg-names = "sn-base","fuse-state";
+	};
+};
+
+&gpu_gx_gdsc {
+        qcom,skip-disable-before-sw-enable;
+};
+
+&pm6150l_vadc {
+	pinctrl-0 = <&nvm_therm_default>, <&backlight_therm_default>;
+
+	backlight_therm {
+		reg = <ADC_GPIO1_PU2>;
+		label = "backlight_therm";
+		qcom,ratiometric;
+		qcom,hw-settle-time = <200>;
+		qcom,pre-scaling = <1 1>;
+	};
+};
+
+&pm6150l_gpios {
+	backlight_therm {
+		backlight_therm_default: backlight_therm_default {
+			pins = "gpio5";
+			bias-high-impedance;
+		};
+	};
+};
+
+&pm6150l_adc_tm {
+	io-channels = <&pm6150l_vadc ADC_GPIO1_PU2>;
+
+	backlight_therm {
+		reg = <ADC_GPIO1_PU2>;
+		qcom,ratiometric;
+		qcom,hw-settle-time = <200>;
+	};
+};

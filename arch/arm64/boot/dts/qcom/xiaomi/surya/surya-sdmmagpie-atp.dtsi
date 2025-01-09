@@ -1,0 +1,4 @@
+&qupv3_se7_i2c {
+    status = "disabled";
+    /delete-node/ st_fts@49;
+};

@@ -1,0 +1,17 @@
+/dts-v1/;
+
+#include "sdmmagpie.dtsi"
+#include "xiaomi/surya/surya-sdmmagpie.dtsi"
+#include "xiaomi/surya/surya-base.dtsi"
+
+/ {
+	model = "Qualcomm Technologies, Inc. SDMMAGPIE SoC";
+	compatible = "qcom,sdmmagpie";
+	qcom,pmic-name = "PM6150";
+	qcom,board-id = <0 0>;
+};
+
+&ufshc_mem {
+	spm-level = <3>;
+	rpm-level = <3>;
+};

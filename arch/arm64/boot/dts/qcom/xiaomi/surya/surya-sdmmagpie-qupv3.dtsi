@@ -1,0 +1,6 @@
+&soc {
+   /delete-node/ &qupv3_se7_i2c;
+   /delete-node/ &qupv3_se8_i2c;
+   /delete-node/ &qupv3_se7_spi;
+   /delete-node/ &qupv3_se8_spi;
+};
