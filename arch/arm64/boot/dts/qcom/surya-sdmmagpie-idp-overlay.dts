@@ -5,7 +5,7 @@
 #include <dt-bindings/clock/qcom,camcc-sdmmagpie.h>
 
 #include "sdmmagpie-idp.dtsi"
-#include "xiaomi/surya/surya-sdmmagpie-idp-overlay.dtsi"
+#include "xiaomi/surya/surya-sdmmagpie-idp.dtsi"
 #include "xiaomi/surya/haptic.dtsi"
 #include "xiaomi/surya/touchscreen.dtsi"
 

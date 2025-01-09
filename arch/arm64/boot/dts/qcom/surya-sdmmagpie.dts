@@ -1,6 +1,7 @@
 /dts-v1/;
 
 #include "sdmmagpie.dtsi"
+#include "sdmmagpie-sde-display.dtsi"
 #include "xiaomi/surya/surya-sdmmagpie.dtsi"
 #include "xiaomi/surya/surya-base.dtsi"
 
