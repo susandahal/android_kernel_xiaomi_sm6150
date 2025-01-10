@@ -6,7 +6,6 @@
 #include "surya-sdmmagpie-stub-regulator.dtsi"
 #include "surya-pm6150.dtsi"
 #include "surya-sdmmagpie-qupv3.dtsi"
-#include "batterydata-M703-ATL-6000mah.dtsi"
 #include "surya-msm-audio-lpass.dtsi"
 #include "surya-sdmmagpie-camera.dtsi"
 #include "surya-sdmmagpie-pinctrl.dtsi"
