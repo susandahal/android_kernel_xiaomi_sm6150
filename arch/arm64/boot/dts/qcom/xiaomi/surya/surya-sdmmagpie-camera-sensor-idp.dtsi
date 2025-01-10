@@ -475,14 +475,14 @@
     qcom,cam-sensor@6 {
         /delete-property/ eeprom-src;
     };
-    /delete-node/ &eeprom_rear_aux;
-    /delete-node/ &eeprom_triple_rear_aux;
-    /delete-node/ &eeprom_triple_uw;
+    /delete-node/ eeprom_rear_aux;
+    /delete-node/ eeprom_triple_rear_aux;
+    /delete-node/ eeprom_triple_uw;
 };
 
 &pm8009_gpios {
-    /delete-node/ &cam_sensor_rear_active;
-    /delete-node/ &cam_sensor_rear_suspend;
-    /delete-node/ &cam_sensor_front_active;
-    /delete-node/ &cam_sensor_front_suspend;
+    /delete-node/ cam_sensor_rear_active;
+    /delete-node/ cam_sensor_rear_suspend;
+    /delete-node/ cam_sensor_front_active;
+    /delete-node/ cam_sensor_front_suspend;
 };
