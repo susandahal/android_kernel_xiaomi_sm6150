@@ -1,5 +1,5 @@
 &soc {
-	mtp_batterydata: qcom,battery-data {
+	mtp_batterydata {
 		#include "batterydata-M703-PM7150B-ATL-5160mah.dtsi"
 		#include "batterydata-M703-ATL-6000mah.dtsi"
 	};
